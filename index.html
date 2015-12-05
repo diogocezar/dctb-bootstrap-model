@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="no-js">
+<html lang="pt-br">
 	<head>
 			<title></title>
 			<meta charset="utf-8">
-			<meta name="keywords" content="">
-			<meta name="viewport" content="">
-			<link href="images/favicon.png" rel="icon" type="image/x-icon" />
-			<meta name="description" content="">
-			<meta name="publisher" content="">
-			<meta name="author" content="">
-			<meta name="robots" content="">
-			<meta property="og:title" content="">
+			<meta name="keywords"           content="">
+			<meta name="viewport"           content="width=device-width, initial-scale=1, user-scalable=no">
+			<meta name="description"        content="">
+			<meta name="publisher"          content="">
+			<meta name="author"             content="">
+			<meta name="robots"             content="index,follow">
+			<meta property="og:title"       content="">
 			<meta property="og:description" content="">
-			<meta property="og:site_name" content="">
-			<meta property="og:image" content="">
-			<meta property="og:url" content="">
-			<link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
-			<link href="./css/shared/shared.css" rel="stylesheet">
-			<link href="./css/fonts/fonts.css" rel="stylesheet">
-			<link href="./css/public/index.css" rel="stylesheet">
-			<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+			<meta property="og:site_name"   content="">
+			<meta property="og:image"       content="./assets/images/og.jpg">
+			<meta property="og:url"         content="">
+			<link href="./assets/images/favicon.png"                        rel="icon"       type="image/x-icon"/>
+			<link href="./assets/css/bootstrap/bootstrap.min.css"           rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/libs/owl.carousel/owl.carousel.css"    rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/libs/owl.carousel/owl.theme.css"       rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/libs/owl.carousel/owl.transitions.css" rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/bootstrap/bootstrap.min.css"           rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/bootstrap/bootstrap.min.css"           rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/shared/shared.css"                     rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/fonts/fonts.css"                       rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/public/index.css"                      rel="stylesheet" type="text/css"/>
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans"  rel="stylesheet" type="text/css"/>
 			<!--[if lt IE 9]><script src="./js/bootstrap/ie.fix/ie8.responsive.file.warning.js"></script><![endif]-->
 			<script src="./js/bootstrap/ie.fix/ie.emulation.modes.warning.js"></script>
 			<script src="./js/bootstrap/ie.fix/ie10.viewport.bug.workaround.js"></script>
@@ -41,18 +46,97 @@
 			<div class="preload-img"></div>
 		</div>
 		<main>
-			
+			<nav></nav>
+			<header>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div id="carousel" class="owl-carousel owl-theme">
+								<div class="item"><h1>1</h1></div>
+								<div class="item"><h1>2</h1></div>
+								<div class="item"><h1>3</h1></div>
+								<div class="item"><h1>4</h1></div>
+								<div class="item"><h1>5</h1></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section id="maps">
+				<div id="map_1" class="map"></div>
+				<div id="map_2" class="map"></div>
+			</section>
+			<section id="change">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="form-group">
+								<button type="button" class="btn btn-primary btn-change">Alterar Url</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="form">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<form data-validate="true">
+			            		<div class="form-group">
+			              			<label for="name">Nome</label>
+			              			<input type="text" id="name" class="form-control" data-required="true" maxlength="150" />
+			            		</div>
+			            		<div class="form-group">
+			              			<label for="email">Email</label>
+			              			<input type="text" id="email" class="form-control" data-email="true" maxlength="150" />
+			            		</div>
+			            		<div class="form-group">
+									<label for="age">Idade</label>
+									<select class="form-control" id="age" data-select="true">
+										<option value="0" selected="selected">Selecione</option>
+										<option value="10">10</option>
+										<option value="20">20</option>
+										<option value="30">30</option>
+										<option value="40">40</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<button type="button" class="btn btn-primary btn-send">Enviar</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer>
-			
 		</footer>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<!-- JQuery -->
 		<script src="./js/jquery/jquery.js"></script>
+		<!-- BootStrap -->
 		<script src="./js/bootstrap/bootstrap.min.js"></script>
+		<!-- Libs -->
 		<script src="./js/libs/easing/easing.min.js"></script>
-		<script src="./js/libs/scroll.reveal/scroll.reveal.min.js"></script>
-		<script src="./js/libs/nice.scroll/nice.scroll.min.js"></script>
+		<script src="./js/libs/howler/howler.min.js"></script>
+		<script src="./js/libs/modernizr/modernizr.min.js"></script>
 		<script src="./js/libs/mouse.wheel/mouse.wheel.min.js"></script>
+		<script src="./js/libs/nice.scroll/nice.scroll.min.js"></script>
+		<script src="./js/libs/owl.carousel/owl.carousel.min.js"></script>
+		<script src="./js/libs/scroll.reveal/scroll.reveal.min.js"></script>
+		<!-- Shared -->
+		<script src="./js/shared/shared.js"></script>
+		<!-- Includes -->
+		<script src="./js/includes/cookie.js"></script>
+		<script src="./js/includes/maps.js"></script>
+		<script src="./js/includes/page.scroll.js"></script>
+		<script src="./js/includes/popup.js"></script>
+		<script src="./js/includes/size.control.js"></script>
+		<script src="./js/includes/url.change.js"></script>
+		<script src="./js/includes/validation.js"></script>
+		<!-- Oracle -->
 		<script src="./js/oracle/oracle.js"></script>
-		<script src="./js/oracle/index.js"></script>
+		<!-- Page Js -->
+		<script src="./js/objects/index.js"></script>
 	</body>
 </html>
