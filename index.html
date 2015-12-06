@@ -142,6 +142,17 @@
 					</div>
 				</div>
 			</section>
+			<section id="video">
+				<div class="player" data-property="{ quality:'hd1080', optimizeDisplay:true, showControls:false, addRaster:false, stopMovieOnBlur:false, videoURL:'http://youtu.be/2PjQe8FRtOs',containment:'self',startAt:0,mute:false,autoPlay:true,loop:true,opacity:.3}">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<h1 data-sr>Exemplo Background com Vídeo</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section id="maps">
 				<div class="container">
 					<div class="row">
@@ -176,7 +187,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="change">
+			<section id="popup">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
@@ -196,6 +207,40 @@
 							<div data-sr><i class="ion-arrow-right-a"></i></div>
 							<h2 data-sr>Font Awesome</h2>
 							<div data-sr><i class="fa fa-car"></i></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="sounds">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1 data-sr>Som</h1>
+							<button type="button" id="btn-play" class="btn btn-primary" data-sr>Tocar Som</button>
+							<button type="button" id="btn-stop" class="btn btn-primary" data-sr>Parar Som</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="cookie">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1 data-sr>Cookies</h1>
+							<button type="button" id="btn-set-cookie" class="btn btn-primary" data-sr>Gravar Cookie</button>
+							<button type="button" id="btn-get-cookie" class="btn btn-primary" data-sr>Recuperar Cookie</button>
+							<button type="button" id="btn-del-cookie" class="btn btn-primary" data-sr>Excluir Cookie</button>
+							<div class="set-cookie" data-sr></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="scroll">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1 data-sr>Scroll</h1>
+							<button type="button" id="btn-scroll" class="btn btn-primary" data-sr>Voltar ao Topo</button>
 						</div>
 					</div>
 				</div>
@@ -275,6 +320,7 @@
 		<!-- Libs -->
 		<script src="./js/libs/easing/easing.min.js"></script>
 		<script src="./js/libs/howler/howler.min.js"></script>
+		<script src="./js/libs/mb.ytplayer/mb.ytplayer.min.js"></script>
 		<script src="./js/libs/modernizr/modernizr.min.js"></script>
 		<script src="./js/libs/mouse.wheel/mouse.wheel.min.js"></script>
 		<script src="./js/libs/nice.scroll/nice.scroll.min.js"></script>
