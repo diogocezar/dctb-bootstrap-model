@@ -1,5 +1,48 @@
+#paralax{
+	margin-top: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: url("../../images/bg-home.jpg") 50% 0 no-repeat;
+	height: 1300px;
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	float:left;
+	clear:both;
+}
+
+#home-div{
+	background: url("../../images/div-home.png") 50% 0 no-repeat;
+	height: 244px;
+	margin: 0 auto;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+@media screen and (max-width: 500px){
+	#paralax{
+	    background: url("../../images/bg-home-small.jpg") 50% 0 no-repeat;
+	    height: 800px;
+	    margin: 0 auto;
+	    width: 100%;
+	    position: relative;
+	    float: left;
+	    clear: both;
+	    margin-top: 60px;
+	}
+	#home-div{
+		display: none;
+	}
+}
+
+section{
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
 #carousel .item{
-	background: #42bdc2;
+	background: #ED1372;
 	padding: 30px 0px;
 	margin: 5px;
 	color: #FFF;
@@ -8,11 +51,38 @@
 	border-radius: 3px;
 	text-align: center;
 }
+
 .error{
 	border-color: red;
 }
+
 .map{
 	margin-top: 30px;
 	margin-bottom: 30px;
 	height: 300px;
+}
+
+.btn-primary {
+	background: #ED1372;
+	border: none;
+	transition: all 0.5s ease 0s!important;
+}
+
+.btn-primary:hover {
+	background: #666;
+	border: none;
+}
+
+#paralax img {
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 140px;
+}
+
+@media screen and (max-width: 500px){
+	#paralax img {
+	    margin: 0 auto;
+	    height: 100%;
+	    padding-top: 0px;
+	}
 }

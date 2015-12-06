@@ -6,7 +6,7 @@ Oracle = {
 			scrollspeed        : 90,
 			mousescrollstep    : 60,
 			cursoropacitymax   : 0.8,
-			cursorcolor        : "#e43c25",
+			cursorcolor        : "#aaa",
 			horizrailenabled   : false,
 			cursorborder       : "none",
 			cursorborderradius : "0px"
@@ -19,6 +19,7 @@ Oracle = {
 		loaded : false,
 		config : {
 			delay    : 500,
+			recheck  : 200,
 			velocity : "slow"
 		},
 		init: function(){
@@ -29,7 +30,7 @@ Oracle = {
 				setTimeout(function(){
 					Shared.Debug.log('Still Loading');
 					Oracle.Preloader.init();
-				}, 200);
+				}, Oracle.Preloader.recheck);
 			}
 		},
 		pageLoaded: function(){
@@ -50,7 +51,7 @@ Oracle = {
 			enter          : "top",
 			move           : "15px",
 			over           : "0.5s",
-			easing         : "hustle",
+			easing         : "ease-in-out",
 			viewportFactor : 0,
 			reset          : true,
 			init           : true

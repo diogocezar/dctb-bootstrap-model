@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-			<title></title>
+			<title>DCFront - Model</title>
 			<meta charset="utf-8">
 			<meta name="keywords"           content="">
 			<meta name="viewport"           content="width=device-width, initial-scale=1, user-scalable=no">
@@ -14,17 +14,22 @@
 			<meta property="og:site_name"   content="">
 			<meta property="og:image"       content="./assets/images/og.jpg">
 			<meta property="og:url"         content="">
-			<link href="./assets/images/favicon.png"                        rel="icon"       type="image/x-icon"/>
-			<link href="./assets/css/bootstrap/bootstrap.min.css"           rel="stylesheet" type="text/css"/>
-			<link href="./assets/css/libs/owl.carousel/owl.carousel.css"    rel="stylesheet" type="text/css"/>
-			<link href="./assets/css/libs/owl.carousel/owl.theme.css"       rel="stylesheet" type="text/css"/>
-			<link href="./assets/css/libs/owl.carousel/owl.transitions.css" rel="stylesheet" type="text/css"/>
-			<link href="./assets/css/bootstrap/bootstrap.min.css"           rel="stylesheet" type="text/css"/>
-			<link href="./assets/css/bootstrap/bootstrap.min.css"           rel="stylesheet" type="text/css"/>
-			<link href="./assets/css/shared/shared.css"                     rel="stylesheet" type="text/css"/>
-			<link href="./assets/css/fonts/fonts.css"                       rel="stylesheet" type="text/css"/>
-			<link href="./assets/css/public/index.css"                      rel="stylesheet" type="text/css"/>
-			<link href="https://fonts.googleapis.com/css?family=Open+Sans"  rel="stylesheet" type="text/css"/>
+			<link href="./assets/images/favicon.png"                                    rel="icon"       type="image/x-icon"/>
+			<link href="./assets/css/bootstrap/bootstrap.min.css"                       rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/libs/owl.carousel/owl.carousel.css"                rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/libs/owl.carousel/owl.theme.css"                   rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/libs/owl.carousel/owl.transitions.css"             rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/bootstrap/bootstrap.min.css"                       rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/bootstrap/bootstrap.min.css"                       rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/shared/shared.css"                                 rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/shared/menu.css"                                   rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/animations/animations.css"                         rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/fonts/fonts.css"                                   rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/fonts/ion.css"                                     rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/fonts/fa.css"                                      rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/public/index.css"                                  rel="stylesheet" type="text/css"/>
+			<link href="./assets/css/public/popups.css"                                 rel="stylesheet" type="text/css"/>
+			<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,900' rel='stylesheet' type='text/css'/>
 			<!--[if lt IE 9]><script src="./js/bootstrap/ie.fix/ie8.responsive.file.warning.js"></script><![endif]-->
 			<script src="./js/bootstrap/ie.fix/ie.emulation.modes.warning.js"></script>
 			<script src="./js/bootstrap/ie.fix/ie10.viewport.bug.workaround.js"></script>
@@ -46,11 +51,87 @@
 			<div class="preload-img"></div>
 		</div>
 		<main>
-			<nav></nav>
-			<header>
+			<nav>
+				<div class="container-fluid bg-nav">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
+								<ul class="menu-left">
+									<li>
+										<a href="#" target="_blank">
+											<img alt="Logotipo" src="./assets/images/menu/logo.svg"/>
+										</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Home</a>
+									</li>
+									<li>
+										<a href="#">Page 1</a>
+									</li>
+									<li>
+										<a href="#">Page 2</a>
+									</li>
+								</ul>
+								<ul class="menu-right">
+									<li>
+										<a href="#" class="btn">Menu Direita</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-md-12 hidden-md hidden-lg">
+								<ul class="menu-left">
+									<li class="icon-closed">
+										<a href="#" id="close-menu"><img alt="Fechar Menu Mobile" src="./assets/images/menu/btn-close.svg"/></a>
+									</li>
+									<li class="icon-opened">
+										<a href="#" id="open-menu"><img alt="Abrir Menu Mobile" src="./assets/images/menu/btn-open.svg"/></a>
+									</li>
+								</ul>
+								<ul class="menu-right">
+									<li>
+										<a href="#" class="btn">Menu Direita</a>
+									</li>
+									<li>
+										<a href="http://www.twitter.com" target="_blank">
+											<img alt="Logotipo" src="./assets/images/menu/logo.svg"/>
+										</a>
+									</li>
+								</ul>
+								<ul class="menu-open">
+									<li>
+										<a href="#">Home</a>
+									</li>
+									<li>
+										<a href="#">Page 1</a>
+									</li>
+									<li>
+										<a href="#">Page 2</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<header id="paralax" class="cover paralax" data-speed="2.5" data-adjustment="0" data-start="0" data-end="1300">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 center">
+							<img src="./assets/images/troops-logo.svg" class="img-responsive img-center floating"/>
+						</div>
+					</div>
+				</div>
+				<div id="home-div" class="cover"></div>
+			</header>
+			<section id="owl">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
+							<h1 data-sr>Exemplo Owl Carousel</h1>
+						</div>
+						<div class="col-lg-12" data-sr>
 							<div id="carousel" class="owl-carousel owl-theme">
 								<div class="item"><h1>1</h1></div>
 								<div class="item"><h1>2</h1></div>
@@ -61,18 +142,61 @@
 						</div>
 					</div>
 				</div>
-			</header>
+			</section>
 			<section id="maps">
-				<div id="map_1" class="map"></div>
-				<div id="map_2" class="map"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1 data-sr>Exemplo Mapa 1</h1>
+							<div id="map_1" class="map" data-sr></div>
+						</div>
+						<div class="col-lg-12">
+							<h1 data-sr>Exemplo Mapa 2</h1>
+							<div id="map_2" class="map" data-sr></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="mobile">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1 data-sr>Sou Mobile?</h1>
+							<div class="set-mobile" data-sr></div>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section id="change">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
-							<div class="form-group">
-								<button type="button" class="btn btn-primary btn-change">Alterar Url</button>
-							</div>
+							<h1 data-sr>Alterar Url</h1>
+							<button type="button" id="btn-change" class="btn btn-primary" data-sr>Alterar Url</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="change">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1 data-sr>PopUps</h1>
+							<button type="button" id="btn-open-popup-1" class="btn btn-primary" data-sr>Abrir PopUp 1</button>
+							<button type="button" id="btn-open-popup-2" class="btn btn-primary" data-sr>Abrir PopUp 2</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="fonts">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1 data-sr>Ícones</h1>
+							<h2 data-sr>Ion Icons</h2>
+							<div data-sr><i class="ion-arrow-right-a"></i></div>
+							<h2 data-sr>Font Awesome</h2>
+							<div data-sr><i class="fa fa-car"></i></div>
 						</div>
 					</div>
 				</div>
@@ -81,6 +205,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12">
+							<h1 data-sr>Validação de Formulário</h1>
+						</div>
+						<div class="col-lg-12" data-sr>
 							<form data-validate="true">
 			            		<div class="form-group">
 			              			<label for="name">Nome</label>
@@ -101,7 +228,7 @@
 									</select>
 								</div>
 								<div class="form-group">
-									<button type="button" class="btn btn-primary btn-send">Enviar</button>
+									<button type="button" class="btn btn-primary btn-send"><i class="ion-arrow-right-a"></i> Enviar</button>
 								</div>
 							</form>
 						</div>
@@ -109,6 +236,36 @@
 				</div>
 			</section>
 		</main>
+		<section id="id-popup-1">
+			<div id="btn-close-popup-1" class="btn-close"></div>
+			<div class="content-popup">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h2>Termos de Uso 1</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="id-popup-2">
+			<div id="btn-close-popup-2" class="btn-close"></div>
+			<div class="content-popup">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h2>Termos de Uso 2</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<footer>
 		</footer>
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -129,13 +286,17 @@
 		<!-- Includes -->
 		<script src="./js/includes/cookie.js"></script>
 		<script src="./js/includes/maps.js"></script>
+		<script src="./js/includes/mobile.js"></script>
 		<script src="./js/includes/page.scroll.js"></script>
+		<script src="./js/includes/paralax.js"></script>
 		<script src="./js/includes/popup.js"></script>
 		<script src="./js/includes/size.control.js"></script>
 		<script src="./js/includes/url.change.js"></script>
 		<script src="./js/includes/validation.js"></script>
 		<!-- Oracle -->
 		<script src="./js/oracle/oracle.js"></script>
+		<!-- Menu -->
+		<script src="./js/objects/menu.js"></script>
 		<!-- Page Js -->
 		<script src="./js/objects/index.js"></script>
 	</body>

@@ -8,29 +8,19 @@ Maps = {
 			mapTypeControl    : false,
 			scaleControl      : false,
 			draggable         : false,
-		},
-		maps : [
-			{
-				id    : 'map_1',
-				lat   : -23.5422911,
-				lng   : -46.6426224,
-				title : 'Título 1'
-			},
-			{
-				id    : 'map_2',
-				lat   : -23.528396,
-				lng   : -46.6722072,
-				title : 'Título 2'
-			},
-		]
+		}
+	},
+	configure: function(maps){
+		Maps.config.maps = maps;
+		google.maps.event.addDomListener(window, 'load', Maps.init(Maps.config));
 	},
 	init: function(config){
 		var config    = config || Maps.config;
 		var latlngs   = [];
 		var mapCanvas = [];
 		var options   = [];
-		var maps      = []
-		var markers   = []
+		var maps      = [];
+		var markers   = [];
 		for(var i=0; i<config.maps.length; i++){
 			latlngs[i]        = {lat : config.maps[i].lat, lng: config.maps[i].lng};
 			mapCanvas[i]      = document.getElementById(config.maps[i].id);
@@ -42,10 +32,7 @@ Maps = {
     			map: maps[i],
     			title: config.maps[i].title
   			});
+  			Shared.Debug.log("Map Setted");
 		}
 	}
 }
-
-$(document).ready(function() {
-	google.maps.event.addDomListener(window, 'load', Maps.init());
-});

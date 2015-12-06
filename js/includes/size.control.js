@@ -1,20 +1,27 @@
 SizeControl = {
-	pageHeight : null,
-	pageWidth  : null,
-	init: function(){
-		SizeControl.start();
+	pageHeight : 0,
+	pageWidth  : 0,
+	docHeight  : 0,
+	docWidth   : 0,
+	configure: function(fn){
+		SizeControl.init(fn);
+	},
+	init: function(fn){
+		SizeControl.start(fn);
 		SizeControl.onResize();
 	},
-	start: function(){
+	start: function(fn){
 		SizeControl.updateSizes();
-		SizeControl.doThis();
+		SizeControl.doThis(fn);
 	},
-	doThis: function(){
-		Shared.Debug.log('Implements Resize Here');
+	doThis: function(fn){
+		fn();
 	},
 	updateSizes: function(){
-		SizeControl.pageHeight = $(window).height;
-		SizeControl.pageWidth  = $(window).width;
+		SizeControl.pageHeight = $(window).height();
+		SizeControl.pageWidth  = $(window).width();
+		SizeControl.docHeight  = $(document).height();
+		SizeControl.docWidth   = $(document).width();
 	},
 	onResize: function(){
 		$(window).on('resize', function(){
@@ -22,7 +29,3 @@ SizeControl = {
 		});
 	}
 }
-
-$(document).ready(function() {
-    SizeControl.init();
-});
