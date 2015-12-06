@@ -1,16 +1,19 @@
 SizeControl = {
 	pageHeight : null,
 	pageWidth  : null,
-	init: function(){
-		SizeControl.start();
+	configure: function(fn){
+		SizeControl.init(fn);
+	},
+	init: function(fn){
+		SizeControl.start(fn);
 		SizeControl.onResize();
 	},
-	start: function(){
+	start: function(fn){
 		SizeControl.updateSizes();
-		SizeControl.doThis();
+		SizeControl.doThis(fn);
 	},
-	doThis: function(){
-		Shared.Debug.log('Implements Resize Here');
+	doThis: function(fn){
+		fn();
 	},
 	updateSizes: function(){
 		SizeControl.pageHeight = $(window).height;
@@ -22,7 +25,3 @@ SizeControl = {
 		});
 	}
 }
-
-$(document).ready(function() {
-    SizeControl.init();
-});

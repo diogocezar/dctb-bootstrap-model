@@ -4,6 +4,7 @@ PageScroll = {
 		duration : 1500
 	},
 	scroll: function(id, margin, config){
+		Shared.Debug.log("Page Scrolled");
 		var m      = margin || 0;
 		var config = config || PageScroll.config;
 		if(Shared.__is_empty(id))

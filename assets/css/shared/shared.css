@@ -2,7 +2,9 @@
 html{}
 
 /* Body */
-body{}
+body{
+	font-family: 'Roboto', sans-serif;
+}
 
 /* Headings */
 

@@ -5,6 +5,7 @@ Validation = {
 		errorClass : "error"
 	},
 	check: function(callBack){
+		Shared.Debug.log("Validation Checked");
 		Validation.error = false;
 		$(document).find("form").each(function(){
 			var obj  = $(this);

@@ -1,5 +1,16 @@
+header{
+	margin-top: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+section{
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
 #carousel .item{
-	background: #42bdc2;
+	background: #000;
 	padding: 30px 0px;
 	margin: 5px;
 	color: #FFF;
@@ -8,9 +19,11 @@
 	border-radius: 3px;
 	text-align: center;
 }
+
 .error{
 	border-color: red;
 }
+
 .map{
 	margin-top: 30px;
 	margin-bottom: 30px;

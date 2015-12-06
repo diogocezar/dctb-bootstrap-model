@@ -6,7 +6,7 @@ Oracle = {
 			scrollspeed        : 90,
 			mousescrollstep    : 60,
 			cursoropacitymax   : 0.8,
-			cursorcolor        : "#e43c25",
+			cursorcolor        : "#aaa",
 			horizrailenabled   : false,
 			cursorborder       : "none",
 			cursorborderradius : "0px"
