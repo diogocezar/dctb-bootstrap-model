@@ -1,3 +1,24 @@
+/* Bootstrap Reset */
+
+.navbar{
+    margin:0;
+    padding:0;
+    border:none;
+    min-height: 0;
+}
+.navbar-nav>li>a {
+    margin:0;
+    padding:0;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.nav > .active > a{
+    color:#ED1372!important;
+}
+
 .bg-nav{
     top: 0px;
     padding-top: 10px;
@@ -21,7 +42,7 @@
 .menu-left li{
     position: relative;
     float: left;
-    margin-right: 50px;
+    margin-right: 35px;
     line-height: 60px;
     list-style: none;
     top: 0px;
@@ -31,7 +52,8 @@
 .menu-left li a{
     color: #a8a2a2;
     text-transform: uppercase;
-    font-size: 14pt;
+    font-size: 12pt;
+    line-height: 44pt;
     transition: all 0.5s ease 0s!important;
 }
 
@@ -56,10 +78,14 @@
     list-style: none;
 }
 
+.menu-right li:last-child{
+    margin-right: 20px;
+}
+
 .menu-right li a{
     color: #a8a2a2;
     text-transform: uppercase;
-    font-size: 14pt;
+    font-size: 12pt;
     transition: all 0.5s ease 0s!important;
 }
 
@@ -91,8 +117,6 @@
     text-align: center;
 }
 
-
-
 .menu-open li:first-child{
     margin-top:20px;
 }
@@ -109,6 +133,10 @@
 .menu-open li a:hover{
     color:#fff;
     text-decoration: none!important;
+}
+
+#others > .container > .col-lg-4{
+    min-height: 300px;
 }
 
 @media (max-width: 475px){

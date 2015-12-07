@@ -15,7 +15,8 @@ SizeControl = {
 		SizeControl.doThis(fn);
 	},
 	doThis: function(fn){
-		fn();
+		if(!Shared.__is_empty(fn))
+			fn();
 	},
 	updateSizes: function(){
 		SizeControl.pageHeight = $(window).height();

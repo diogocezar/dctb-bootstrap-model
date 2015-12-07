@@ -45,35 +45,41 @@
 		  ga('send', 'pageview');
 		</script>
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="80">
 		<div id="preloader">
 			<div class="preload-img"></div>
 		</div>
 		<main>
-			<nav>
+			<nav class="navbar">
 				<div class="container-fluid bg-nav">
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
-								<ul class="menu-left">
-									<li>
-										<a href="#" target="_blank">
+								<ul class="menu-left nav navbar-nav">
+									<li class="menu-item">
+										<a href="#home">
 											<img alt="Logotipo" src="./assets/images/menu/logo.svg"/>
 										</a>
 									</li>
 									<li class="menu-item">
-										<a href="#">Home</a>
+										<a href="#owl">Carousel</a>
 									</li>
-									<li>
-										<a href="#">Page 1</a>
+									<li class="menu-item">
+										<a href="#video">Vídeo BG</a>
 									</li>
-									<li>
-										<a href="#">Page 2</a>
+									<li class="menu-item">
+										<a href="#maps">Mapas</a>
+									</li>
+									<li class="menu-item">
+										<a href="#others">Outras Funcionalidades</a>
+									</li>
+									<li class="menu-item">
+										<a href="#form">Formulário</a>
 									</li>
 								</ul>
 								<ul class="menu-right">
-									<li>
-										<a href="#" class="btn">Menu Direita</a>
+									<li class="menu-item">
+										<a href="#">Menu Direita</a>
 									</li>
 								</ul>
 							</div>
@@ -89,24 +95,30 @@
 									</li>
 								</ul>
 								<ul class="menu-right">
-									<li>
-										<a href="#" class="btn">Menu Direita</a>
+									<li class="menu-item">
+										<a href="#">Menu Direita</a>
 									</li>
-									<li>
-										<a href="http://www.twitter.com" target="_blank">
+									<li class="menu-item">
+										<a href="#home">
 											<img alt="Logotipo" src="./assets/images/menu/logo.svg"/>
 										</a>
 									</li>
 								</ul>
-								<ul class="menu-open">
-									<li>
-										<a href="#">Home</a>
+								<ul class="menu-open nav navbar-nav">
+									<li class="menu-item">
+										<a href="#owl">Carousel</a>
 									</li>
-									<li>
-										<a href="#">Page 1</a>
+									<li class="menu-item">
+										<a href="#video">Vídeo BG</a>
 									</li>
-									<li>
-										<a href="#">Page 2</a>
+									<li class="menu-item">
+										<a href="#maps">Mapas</a>
+									</li>
+									<li class="menu-item">
+										<a href="#others">Outras Funcionalidades</a>
+									</li>
+									<li class="menu-item">
+										<a href="#form">Formulário</a>
 									</li>
 								</ul>
 							</div>
@@ -114,7 +126,7 @@
 					</div>
 				</div>
 			</nav>
-			<header id="paralax" class="cover paralax" data-speed="2.5" data-adjustment="0" data-start="0" data-end="1300">
+			<header id="home" class="cover paralax" data-speed="2.5" data-adjustment="0" data-start="0" data-end="1300">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 center">
@@ -129,6 +141,7 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<h1 data-sr>Exemplo Owl Carousel</h1>
+							<p>O modelo está preparado para a utlização do owl carousel.</p>
 						</div>
 						<div class="col-lg-12" data-sr>
 							<div id="carousel" class="owl-carousel owl-theme">
@@ -148,6 +161,7 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<h1 data-sr>Exemplo Background com Vídeo</h1>
+								<p>É possível setar backgrounds utilizando vídeos direto do youtube.</p>
 							</div>
 						</div>
 					</div>
@@ -158,10 +172,12 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<h1 data-sr>Exemplo Mapa 1</h1>
+							<p>O modelo possui implementação de múltiplos mapas, utilizando o Google Maps.</p>
 							<div id="map_1" class="map" data-sr></div>
 						</div>
 						<div class="col-lg-12">
 							<h1 data-sr>Exemplo Mapa 2</h1>
+							<p>É possível customizar sua aparência.</p>
 							<div id="map_2" class="map" data-sr></div>
 						</div>
 					</div>
@@ -177,71 +193,71 @@
 					</div>
 				</div>
 			</section>
-			<section id="change">
+			<section id="others">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<h1 data-sr>Alterar Url</h1>
-							<button type="button" id="btn-change" class="btn btn-primary" data-sr>Alterar Url</button>
-						</div>
+					<div class="col-ls-12">
+						<h1>Outras Funcionalidades</h1>
+						<p>Outras funcionalidades disponíveis no modelo.</p>
 					</div>
-				</div>
-			</section>
-			<section id="popup">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<h1 data-sr>PopUps</h1>
-							<button type="button" id="btn-open-popup-1" class="btn btn-primary" data-sr>Abrir PopUp 1</button>
-							<button type="button" id="btn-open-popup-2" class="btn btn-primary" data-sr>Abrir PopUp 2</button>
-						</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<section id="change">
+							<div class="row">
+								<div class="col-lg-12">
+									<h2 data-sr>Alterar Url</h2>
+									<p>Utilize este botão para alterar a url do navegador.</p>
+									<button type="button" id="btn-change" class="btn btn-primary" data-sr><i class="fa fa-link"></i> Alterar Url</button>
+								</div>
+							</div>
+						</section>
 					</div>
-				</div>
-			</section>
-			<section id="fonts">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<h1 data-sr>Ícones</h1>
-							<h2 data-sr>Ion Icons</h2>
-							<div data-sr><i class="ion-arrow-right-a"></i></div>
-							<h2 data-sr>Font Awesome</h2>
-							<div data-sr><i class="fa fa-car"></i></div>
-						</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<section id="popup">
+							<div class="row">
+								<div class="col-lg-12">
+									<h2 data-sr>PopUps</h2>
+									<p>Utilize este botão abrir janelas na própria página.</p>
+									<button type="button" id="btn-open-popup-1" class="btn btn-primary" data-sr><i class="fa fa-external-link-square"></i> Abrir PopUp 1</button>
+									<button type="button" id="btn-open-popup-2" class="btn btn-primary" data-sr><i class="fa fa-external-link-square"></i> Abrir PopUp 2</button>
+								</div>
+							</div>
+						</section>
 					</div>
-				</div>
-			</section>
-			<section id="sounds">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<h1 data-sr>Som</h1>
-							<button type="button" id="btn-play" class="btn btn-primary" data-sr>Tocar Som</button>
-							<button type="button" id="btn-stop" class="btn btn-primary" data-sr>Parar Som</button>
-						</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<section id="sounds">
+							<div class="row">
+								<div class="col-lg-12">
+									<h2 data-sr>Som</h2>
+									<p>Utilize estes botões tocar/parar um som.</p>
+									<button type="button" id="btn-play" class="btn btn-primary" data-sr><i class="fa fa-play"></i> Play</button>
+									<button type="button" id="btn-stop" class="btn btn-primary" data-sr><i class="fa fa-stop"></i> Stop</button>
+								</div>
+							</div>
+						</section>
 					</div>
-				</div>
-			</section>
-			<section id="cookie">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<h1 data-sr>Cookies</h1>
-							<button type="button" id="btn-set-cookie" class="btn btn-primary" data-sr>Gravar Cookie</button>
-							<button type="button" id="btn-get-cookie" class="btn btn-primary" data-sr>Recuperar Cookie</button>
-							<button type="button" id="btn-del-cookie" class="btn btn-primary" data-sr>Excluir Cookie</button>
-							<div class="set-cookie" data-sr></div>
-						</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<section id="cookie">
+							<div class="row">
+								<div class="col-lg-12">
+									<h2 data-sr>Cookies</h2>
+									<p>Utilize estes botões para controlar cookies.</p>
+									<button type="button" id="btn-set-cookie" class="btn btn-primary" data-sr><i class="fa fa-plus-square"></i> Gravar</button>
+									<button type="button" id="btn-get-cookie" class="btn btn-primary" data-sr><i class="fa fa-undo"></i> Recuperar</button>
+									<button type="button" id="btn-del-cookie" class="btn btn-primary" data-sr><i class="fa fa-trash"></i> Excluir</button>
+									<div class="set-cookie"></div>
+								</div>
+							</div>
+						</section>
 					</div>
-				</div>
-			</section>
-			<section id="scroll">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12">
-							<h1 data-sr>Scroll</h1>
-							<button type="button" id="btn-scroll" class="btn btn-primary" data-sr>Voltar ao Topo</button>
-						</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+						<section id="scroll">
+							<div class="row">
+								<div class="col-lg-12">
+									<h2 data-sr>Scroll</h2>
+									<p>Utilize este botão para voltar ao topo da página.</p>
+									<button type="button" id="btn-scroll" class="btn btn-primary" data-sr><i class="fa fa-arrow-up"></i> Voltar ao Topo</button>
+								</div>
+							</div>
+						</section>
 					</div>
 				</div>
 			</section>
@@ -250,20 +266,21 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<h1 data-sr>Validação de Formulário</h1>
+							<p>O modelo possui um sistema simples de validação de formulários.</p>
 						</div>
 						<div class="col-lg-12" data-sr>
 							<form data-validate="true">
 			            		<div class="form-group">
-			              			<label for="name">Nome</label>
-			              			<input type="text" id="name" class="form-control" data-required="true" maxlength="150" />
+			              			<label for="name" data-original="Nome">Nome</label>
+			              			<input type="text" id="name" class="form-control" data-required="true" data-error-msg="O nome não pode ficar em branco." maxlength="150" />
 			            		</div>
 			            		<div class="form-group">
-			              			<label for="email">Email</label>
-			              			<input type="text" id="email" class="form-control" data-email="true" maxlength="150" />
+			              			<label for="email" data-original="Email">Email</label>
+			              			<input type="text" id="email" class="form-control" data-email="true" data-error-msg="O e-mail deve ser válido e não pode ficar em branco." maxlength="150" />
 			            		</div>
 			            		<div class="form-group">
-									<label for="age">Idade</label>
-									<select class="form-control" id="age" data-select="true">
+									<label for="age" data-original="Idade">Idade</label>
+									<select class="form-control" id="age" data-select="true" data-error-msg="Deve-se selecionar uma mensagem.">
 										<option value="0" selected="selected">Selecione</option>
 										<option value="10">10</option>
 										<option value="20">20</option>
@@ -310,8 +327,7 @@
 				</div>
 			</div>
 		</section>
-		<footer>
-		</footer>
+		<!-- Google Maps -->
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 		<!-- JQuery -->
 		<script src="./js/jquery/jquery.js"></script>
