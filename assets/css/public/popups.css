@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 #id-popup-1, #id-popup-2{
     display: none;
     background-color: #000;
@@ -52,59 +51,4 @@
         margin-left: 0px;
         margin-right: 0px;
     }
-=======
-#id-popup-1, #id-popup-2{
-    display: none;
-    background-color: #000;
-    position: absolute;
-    width: 100%;
-    top: 0!important;
-    z-index: 9999999;
-    margin: 0 !important;
-}
-
-#id-popup-1 h2, #id-popup-2 h2{
-    font-size: 34pt;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 10pt;
-}
-
-.btn-close{
-    background: url("../../images/popup/close.png") center 0;
-    height: 50px;
-    width: 50px;
-    top: 35px;
-    left: 100%;
-    margin-left: -85px;
-    cursor: pointer;
-    z-index: 9999999;
-    position: fixed;
-    display: none;
-}
-
-.content-popup{
-    margin-top: 100px;
-	color: #fff!important;
-}
-
-.content-popup p{
-    margin-bottom: 23px;
-    margin-top: 27px;
-    font-size: 14pt;
-    color: #a8a2a2;
-    text-align: justify;
-    margin-left: 15%;
-    margin-right: 15%;
-    line-height: 27pt;
-    letter-spacing: 1pt;
-}
-
-@media screen and (max-width: 530px){
-    .content-popup p{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
->>>>>>> Stashed changes
 }
