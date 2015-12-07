@@ -24,9 +24,9 @@ PopUp = {
 	},
 	open: function(id, close){
 		Shared.Debug.log("Popup Opened");
-		$("main").hide(function(){
-			$('#' + id).fadeIn();
-		});
+		$('#' + id).fadeIn();
+		$("main").hide();
+		PopUp.top();
 		$(document).keyup(function(e) {
 		    if (e.keyCode == 27) {
 		    	PopUp.close(id);
@@ -35,17 +35,15 @@ PopUp = {
 		setTimeout(function(){
 			$("#" + close).fadeIn();
 		}, PopUp.config.delay);
-		PopUp.top();
 	},
 	close: function(id, close){
 		Shared.Debug.log("Popup Closed");
-		$("main").show(function(){
-			$('#' + id).fadeOut();
-		});
+		$('#' + id).fadeOut();
+		$("main").show();
+		PopUp.top();
 		setTimeout(function(){
 			$("#" + close).fadeOut()
 		}, PopUp.config.delay);
-		PopUp.top();
 	},
 	top: function(){
 		PageScroll.scroll();
