@@ -53,13 +53,23 @@ Validation = {
 	reset: function(field){
 		field.removeClass(Validation.config.errorClass);
 		var label    = $("label[for='"+field.attr('id')+"']");
-		var original = label.data('original');
+		if(!Shared.__is_empty(Translate.currentLang)){
+			var original = label.data('original-' + Translate.currentLang);
+		}
+		else{
+			var original = label.data('original');
+		}
 		label.empty().html(original);
 	},
 	setError: function(field){
 		if(Validation.focusEl == null) Validation.focusEl = field;
 		var label = $("label[for='"+field.attr('id')+"']");
-		var msg   = field.data('error-msg');
+		if(!Shared.__is_empty(Translate.currentLang)){
+			var msg = field.data('error-msg-' + Translate.currentLang);
+		}
+		else{
+			var msg = field.data('error-msg');
+		}
 		var old   = label.html();
 		Validation.error = true;
 		label.empty().html('<i class="fa fa-exclamation-circle hide-info"></i> ' + old + '<div class="help-block hide-info"><small>' + msg +'</small></div>');

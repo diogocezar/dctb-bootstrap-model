@@ -13,7 +13,12 @@ Mobile = {
 		else{
 			Mobile.isMobile = false;
 		}
-		$(".set-mobile").empty().html(Mobile.isMobile ? "Você está em dispositivo mobile." + " " + Mobile.mobileType : "Você não está em dispositivo mobile.");
+		if(Translate.currentLang == "en"){
+			$(".set-mobile").empty().html(Mobile.isMobile ? "You are on a mobile device." + " " + Mobile.mobileType : "You are not on mobile device.");
+		}
+		else{
+			$(".set-mobile").empty().html(Mobile.isMobile ? "Você está em dispositivo mobile." + " " + Mobile.mobileType : "Você não está em dispositivo mobile.");
+		}
 		Shared.Debug.log("Am i mobile? " + Mobile.isMobile);
 	},
 	getType: function(){
