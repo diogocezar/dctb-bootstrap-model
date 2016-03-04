@@ -1,0 +1,1 @@
+PageScroll={config:{easing:"easeOutQuart",duration:1500},scroll:function(o,a,e){Shared.Debug.log("Page Scrolled");var l=a||0,e=e||PageScroll.config;Shared.__is_empty(o)?$("html, body").stop().animate({scrollTop:0},e.duration,e.easing):$("html, body").stop().animate({scrollTop:$(o).offset().top-l},e.duration,e.easing)}};
