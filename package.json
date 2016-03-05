@@ -1,14 +1,14 @@
 {
-  "name": "boyband-website",
-  "version": "0.0.0",
-  "private": true,
-  "description": "WebSite of BoyBand Company 2016",
-  "main": "index.js",
+  "name": "dctb-front-model",
+  "version": "0.0.15",
+  "private": false,
+  "description": "This project is a model for a simple Front-End projects",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Diogo Cezar <diogo@diogocezar.com>",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",

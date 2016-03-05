@@ -1,0 +1,27 @@
+{
+  "name": "dctb-front-model",
+  "description": "This project is a model for a simple Front-End projects",
+  "main": "index.html",
+  "authors": [
+    "Diogo Cezar <diogo@diogocezar.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Front-End",
+    "Model",
+    "Diogo",
+    "Cezar"
+  ],
+  "homepage": "https://github.com/diogocezar/dctb-front-model",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
