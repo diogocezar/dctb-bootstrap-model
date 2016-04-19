@@ -97,7 +97,7 @@ Oracle = {
 			for(var i=0; i<Oracle.OwlCarousel.carousels.ids.length; i++){
 				var item = Oracle.OwlCarousel.carousels.ids[i];
 				if(item.length){
-					Oracle.OwlCarousel.carousels.assigned[i] = item.owlCarousel();
+					Oracle.OwlCarousel.carousels.assigned[i] = item.owlCarousel(Oracle.OwlCarousel.config);
 				}
 				setTimeout(function(){
 					$(".owl-carousel").each(function(){
