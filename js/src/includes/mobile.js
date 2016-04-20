@@ -8,7 +8,7 @@ Mobile = {
 	init: function(){
 		if(jQuery.browser.mobile){
 			Mobile.isMobile   = true;
-			Mobile.mobileType = Mobile.getTypes();
+			Mobile.mobileType = Mobile.getType();
 		}
 		else{
 			Mobile.isMobile = false;
