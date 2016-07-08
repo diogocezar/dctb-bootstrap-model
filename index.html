@@ -9,11 +9,25 @@
 		<meta name="publisher"          content="">
 		<meta name="author"             content="">
 		<meta name="robots"             content="index,follow">
-		<meta property="og:title"       content="">
-		<meta property="og:description" content="">
-		<meta property="og:site_name"   content="">
-		<meta property="og:image"       content="./assets/images/og.jpg">
-		<meta property="og:url"         content="">
+		<!-- OG -->
+		<meta property="og:url"          content="">
+		<meta property="og:title"        content="">
+		<meta property="og:site_name"    content="">
+		<meta property="og:description"  content="">
+		<meta property="og:image"        content="">
+		<meta property="og:image:type"   content="">
+		<meta property="og:image:width"  content="">
+		<meta property="og:image:height" content="">
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="">
+		<meta name="twitter:title" content="">
+		<meta name="twitter:url" content="">
+		<meta name="twitter:image:src" content="">
+		<meta name="twitter:description" content="">
+		<!-- Google + -->
+		<meta itemprop="name" content="">
+		<meta itemprop="description" content="">
 		<link href="./assets/images/favicon.png" rel="icon" type="image/x-icon"/>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -24,38 +38,9 @@
 		  ga('send', 'pageview');
 		</script>
 		<style>
-			#preloader{
-			    position: fixed;
-			    top: 0;
-			    left: 0;
-			    right: 0;
-			    bottom: 0;
-			    background-color: #000;
-			    z-index: 2147483647;
-			    height: 100%;
-			 }
-			.preload-img{
-				background-image: url("assets/images/preload.svg");
-				background-position: center center;
-				background-repeat: no-repeat;
-				height: 352px;
-				width: 341px;
-				left: 50%;
-				top: 50%;
-				position: absolute;
-				margin: -176px 0 0 -170px;
-			 }
-			 .no-svg .preload-img{
-				background-image: url("assets/images/preload.png");
-				background-position: center center;
-				background-repeat: no-repeat;
-				height: 352px;
-				width: 341px;
-				left: 50%;
-				top: 50%;
-				position: absolute;
-				margin: -176px 0 0 -170px;
-			 }
+			#preloader           { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #000; z-index: 2147483647; height: 100%; }
+			.preload-img         { background-image: url("assets/images/preload.svg"); background-position: center center; background-repeat: no-repeat; height: 352px; width: 341px; left: 50%; top: 50%; position: absolute; margin: -176px 0 0 -170px; }
+			.no-svg .preload-img { background-image: url("assets/images/preload.png"); background-position: center center; background-repeat: no-repeat; height: 352px; width: 341px; left: 50%; top: 50%; position: absolute; margin: -176px 0 0 -170px; }
 		</style>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="80">
