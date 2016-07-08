@@ -1,6 +1,6 @@
 {
-  "name": "dctb-front-model",
-  "description": "This project is a model for a simple Front-End projects",
+  "name": "dctb-bootstrap-model",
+  "description": "This is my pack of plugins and implementations of front-end model with Bootstrap 3.x and JQuery 2.x",
   "main": "index.html",
   "authors": [
     "Diogo Cezar <diogo@diogocezar.com>"
@@ -9,10 +9,12 @@
   "keywords": [
     "Front-End",
     "Model",
+    "Bootstrap",
+    "JQuery",
     "Diogo",
     "Cezar"
   ],
-  "homepage": "https://github.com/diogocezar/dctb-front-model",
+  "homepage": "https://github.com/diogocezar/dctb-bootstrap-model",
   "moduleType": [
     "globals",
     "node"
